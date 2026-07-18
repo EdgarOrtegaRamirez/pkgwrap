@@ -96,8 +96,8 @@ func parseBrewInfoJSON(out string, pkg string) *PackageInfo {
 	}
 
 	var brewInfo struct {
-		Name        string `json:"name"`
-		Versions    struct {
+		Name     string `json:"name"`
+		Versions struct {
 			Stable string `json:"stable"`
 		} `json:"versions"`
 		Description string `json:"desc"`
@@ -114,8 +114,8 @@ func parseBrewInfoJSON(out string, pkg string) *PackageInfo {
 
 	// Try as array
 	var brewInfoArr []struct {
-		Name        string `json:"name"`
-		Versions    struct {
+		Name     string `json:"name"`
+		Versions struct {
 			Stable string `json:"stable"`
 		} `json:"versions"`
 		Description string `json:"desc"`
